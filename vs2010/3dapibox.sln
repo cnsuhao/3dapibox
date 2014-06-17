@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01_Window", "ogl\01_Window\01_Window.vcxproj", "{71F5DDE9-DB0E-4692-A823-211E1534467C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ogl", "ogl", "{1F8C4DA6-3BDC-46EA-BB6A-D9A87AE90850}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02_HelloDot", "ogl\02_HelloDot\02_HelloDot.vcxproj", "{1182F888-1F7B-4B1D-907E-BED389B04D05}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -13,8 +17,16 @@ Global
 		{71F5DDE9-DB0E-4692-A823-211E1534467C}.Debug|Win32.Build.0 = Debug|Win32
 		{71F5DDE9-DB0E-4692-A823-211E1534467C}.Release|Win32.ActiveCfg = Release|Win32
 		{71F5DDE9-DB0E-4692-A823-211E1534467C}.Release|Win32.Build.0 = Release|Win32
+		{1182F888-1F7B-4B1D-907E-BED389B04D05}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1182F888-1F7B-4B1D-907E-BED389B04D05}.Debug|Win32.Build.0 = Debug|Win32
+		{1182F888-1F7B-4B1D-907E-BED389B04D05}.Release|Win32.ActiveCfg = Release|Win32
+		{1182F888-1F7B-4B1D-907E-BED389B04D05}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{71F5DDE9-DB0E-4692-A823-211E1534467C} = {1F8C4DA6-3BDC-46EA-BB6A-D9A87AE90850}
+		{1182F888-1F7B-4B1D-907E-BED389B04D05} = {1F8C4DA6-3BDC-46EA-BB6A-D9A87AE90850}
 	EndGlobalSection
 EndGlobal
