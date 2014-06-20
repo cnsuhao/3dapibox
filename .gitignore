@@ -19,3 +19,15 @@
 *.exe
 *.out
 *.app
+
+# VC++
+bin/
+build/
+*.sdf
+*.suo
+ipch/
+*.user
+*.opensdf
+
+# vim
+*.swp
