@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dx9", "dx9", "{08464EF8-96D
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01_WindowDx9", "dx9\01_Window\01_WindowDx9.vcxproj", "{CB411AEE-3F3A-4B3A-AA06-C24DF1D4D0A2}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03_SimpleTriangleOgl", "ogl\03_SimpleTriangleOgl\03_SimpleTriangleOgl.vcxproj", "{43706038-7726-45DC-A352-1A00C3166E34}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -29,6 +31,10 @@ Global
 		{CB411AEE-3F3A-4B3A-AA06-C24DF1D4D0A2}.Debug|Win32.Build.0 = Debug|Win32
 		{CB411AEE-3F3A-4B3A-AA06-C24DF1D4D0A2}.Release|Win32.ActiveCfg = Release|Win32
 		{CB411AEE-3F3A-4B3A-AA06-C24DF1D4D0A2}.Release|Win32.Build.0 = Release|Win32
+		{43706038-7726-45DC-A352-1A00C3166E34}.Debug|Win32.ActiveCfg = Debug|Win32
+		{43706038-7726-45DC-A352-1A00C3166E34}.Debug|Win32.Build.0 = Debug|Win32
+		{43706038-7726-45DC-A352-1A00C3166E34}.Release|Win32.ActiveCfg = Release|Win32
+		{43706038-7726-45DC-A352-1A00C3166E34}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -36,6 +42,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{71F5DDE9-DB0E-4692-A823-211E1534467C} = {1F8C4DA6-3BDC-46EA-BB6A-D9A87AE90850}
 		{1182F888-1F7B-4B1D-907E-BED389B04D05} = {1F8C4DA6-3BDC-46EA-BB6A-D9A87AE90850}
+		{43706038-7726-45DC-A352-1A00C3166E34} = {1F8C4DA6-3BDC-46EA-BB6A-D9A87AE90850}
 		{CB411AEE-3F3A-4B3A-AA06-C24DF1D4D0A2} = {08464EF8-96DB-436F-8287-6312261CD10A}
 	EndGlobalSection
 EndGlobal
