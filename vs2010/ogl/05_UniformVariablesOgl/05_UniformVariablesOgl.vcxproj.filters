@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\ogl\05_UniformVariables\main.cpp" />
+    <ClCompile Include="..\..\..\src\ogl\05_UniformVariables\util.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\ogl\05_UniformVariables\math_3d.h" />
+    <ClInclude Include="..\..\..\src\ogl\05_UniformVariables\util.h" />
+  </ItemGroup>
+</Project>
