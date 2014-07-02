@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01_Window", "ogl\01_Window\01_Window.vcxproj", "{71F5DDE9-DB0E-4692-A823-211E1534467C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01_WindowOgl", "ogl\01_WindowOgl\01_WindowOgl.vcxproj", "{71F5DDE9-DB0E-4692-A823-211E1534467C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ogl", "ogl", "{1F8C4DA6-3BDC-46EA-BB6A-D9A87AE90850}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02_HelloDot", "ogl\02_HelloDot\02_HelloDot.vcxproj", "{1182F888-1F7B-4B1D-907E-BED389B04D05}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02_HelloDotOgl", "ogl\02_HelloDotOgl\02_HelloDotOgl.vcxproj", "{1182F888-1F7B-4B1D-907E-BED389B04D05}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dx9", "dx9", "{08464EF8-96DB-436F-8287-6312261CD10A}"
 EndProject
