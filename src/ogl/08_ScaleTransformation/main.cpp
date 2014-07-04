@@ -9,8 +9,8 @@
 GLuint VBO;
 GLuint gWorldLocation;
 
-const char* pVSFileName = "../../../src/ogl/07_RotationTransformation/vs.glsl";
-const char* pFSFileName = "../../../src/ogl/07_RotationTransformation/fs.glsl";
+const char* pVSFileName = "../../../src/ogl/08_ScaleTransformation/vs.glsl";
+const char* pFSFileName = "../../../src/ogl/08_ScaleTransformation/fs.glsl";
 
 static void RenderSceneCallback()
 {
@@ -20,9 +20,9 @@ static void RenderSceneCallback()
 	scale += 0.001f;
 
 	Matrix4f world;
-	world.m[0][0] = cosf(scale); world.m[0][1] = -sinf(scale); world.m[0][2] = 0.0f; world.m[0][3] = 0.0f;
-	world.m[1][0] = sinf(scale); world.m[1][1] = cosf(scale); world.m[1][2] = 0.0f; world.m[1][3] = 0.0f;
-	world.m[2][0] = 0.0f; world.m[2][1] = 0.0f; world.m[2][2] = 1.0f; world.m[2][3] = 0.0f;
+	world.m[0][0] = sinf(scale); world.m[0][1] = 0.0f; world.m[0][2] = 0.0f; world.m[0][3] = 0.0f;
+	world.m[1][0] = 0.0f; world.m[1][1] = sinf(scale); world.m[1][2] = 0.0f; world.m[1][3] = 0.0f;
+	world.m[2][0] = 0.0f; world.m[2][1] = 0.0f; world.m[2][2] = sinf(scale); world.m[2][3] = 0.0f;
 	world.m[3][0] = 0.0f; world.m[3][1] = 0.0f; world.m[3][2] = 1.0f; world.m[3][3] = 1.0f;
 	glUniformMatrix4fv(gWorldLocation, 1, GL_TRUE, &world.m[0][0]);
 
@@ -151,7 +151,7 @@ int main(int argc, char* argv[])
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA);
 	glutInitWindowSize(800, 600);
 	glutInitWindowPosition(100, 100);
-	glutCreateWindow("07 - Rotation Transformation (OpenGL)");
+	glutCreateWindow("08 - Scale Transformation (OpenGL)");
 
 	InitializeGlutCallbacks();
 
