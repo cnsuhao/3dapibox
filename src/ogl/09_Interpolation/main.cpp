@@ -1,25 +1,30 @@
 #include <stdio.h>
 #include <string.h>
 #include <assert.h>
-#include <math.h>
 #include <GL/glew.h>
 #include <GL/freeglut.h>
 #include "math_3d.h"
 #include "util.h"
 
 GLuint VBO;
-GLuint gScaleLocation;
+GLuint gWorldLocation;
 
-const char* pVSFileName = "../../../src/ogl/05_UniformVariables/vs.glsl";
-const char* pFSFileName = "../../../src/ogl/05_UniformVariables/fs.glsl";
+const char* pVSFileName = "../../../src/ogl/09_Interpolation/vs.glsl";
+const char* pFSFileName = "../../../src/ogl/09_Interpolation/fs.glsl";
 
 static void RenderSceneCallback()
 {
 	glClear(GL_COLOR_BUFFER_BIT);
 
-	static float scale = 0.0f;
+	static float scale = 0.f;
 	scale += 0.001f;
-	glUniform1f(gScaleLocation, sinf(scale));
+
+	Matrix4f world;
+	world.m[0][0] = sinf(scale); world.m[0][1] = 0.0f; world.m[0][2] = 0.0f; world.m[0][3] = 0.0f;
+	world.m[1][0] = 0.0f; world.m[1][1] = sinf(scale); world.m[1][2] = 0.0f; world.m[1][3] = 0.0f;
+	world.m[2][0] = 0.0f; world.m[2][1] = 0.0f; world.m[2][2] = sinf(scale); world.m[2][3] = 0.0f;
+	world.m[3][0] = 0.0f; world.m[3][1] = 0.0f; world.m[3][2] = 1.0f; world.m[3][3] = 1.0f;
+	glUniformMatrix4fv(gWorldLocation, 1, GL_TRUE, &world.m[0][0]);
 
 	glEnableVertexAttribArray(0);
 	glBindBuffer(GL_ARRAY_BUFFER, VBO);
@@ -135,8 +140,8 @@ static void CompileShaders()
 
 	glUseProgram(ShaderProgram);
 
-	gScaleLocation = glGetUniformLocation(ShaderProgram, "gScale");
-	assert(gScaleLocation != 0xFFFFFFFF);
+	gWorldLocation = glGetUniformLocation(ShaderProgram, "gWorld");
+	assert(gWorldLocation != 0xFFFFFFFF);
 }
 
 
@@ -146,7 +151,7 @@ int main(int argc, char* argv[])
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA);
 	glutInitWindowSize(800, 600);
 	glutInitWindowPosition(100, 100);
-	glutCreateWindow("05 - Uniform Variables (OpenGL)");
+	glutCreateWindow("09 - Interpolation (OpenGL)");
 
 	InitializeGlutCallbacks();
 

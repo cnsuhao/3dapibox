@@ -12,7 +12,7 @@ int main(int argc, char* argv[])
 	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA);
 	glutInitWindowSize(800, 600);
 	glutInitWindowPosition(100, 100);
-	glutCreateWindow("01_Window");
+	glutCreateWindow("01 - Window (OpenGL)");
 
 	glutDisplayFunc(renderSceneCallback);
 
