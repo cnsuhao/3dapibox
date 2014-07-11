@@ -37,6 +37,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02_SimplePointOgl4", "ogl4\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03_SingleTriangleOgl4", "ogl4\03_SingleTriangleOgl4\03_SingleTriangleOgl4.vcxproj", "{2A8FB66E-6AC4-46EF-9FE9-D6E3CCAFB74A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "04_MovingTriangleOgl4", "ogl4\04_MovingTriangleOgl4\04_MovingTriangleOgl4.vcxproj", "{356211E3-A9A5-4716-898F-878DD9832762}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -103,6 +105,10 @@ Global
 		{2A8FB66E-6AC4-46EF-9FE9-D6E3CCAFB74A}.Debug|Win32.Build.0 = Debug|Win32
 		{2A8FB66E-6AC4-46EF-9FE9-D6E3CCAFB74A}.Release|Win32.ActiveCfg = Release|Win32
 		{2A8FB66E-6AC4-46EF-9FE9-D6E3CCAFB74A}.Release|Win32.Build.0 = Release|Win32
+		{356211E3-A9A5-4716-898F-878DD9832762}.Debug|Win32.ActiveCfg = Debug|Win32
+		{356211E3-A9A5-4716-898F-878DD9832762}.Debug|Win32.Build.0 = Debug|Win32
+		{356211E3-A9A5-4716-898F-878DD9832762}.Release|Win32.ActiveCfg = Release|Win32
+		{356211E3-A9A5-4716-898F-878DD9832762}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -123,5 +129,6 @@ Global
 		{D2FFC577-FB35-4493-B216-5CC81C8FB745} = {06F14E49-D1F0-4EFD-90FE-30071A2D3952}
 		{A84C02A7-0161-4838-9492-128F9D19B397} = {06F14E49-D1F0-4EFD-90FE-30071A2D3952}
 		{2A8FB66E-6AC4-46EF-9FE9-D6E3CCAFB74A} = {06F14E49-D1F0-4EFD-90FE-30071A2D3952}
+		{356211E3-A9A5-4716-898F-878DD9832762} = {06F14E49-D1F0-4EFD-90FE-30071A2D3952}
 	EndGlobalSection
 EndGlobal
