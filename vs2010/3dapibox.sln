@@ -41,6 +41,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "04_MovingTriangleOgl4", "og
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "05_ColorBetweenStageOgl4", "ogl4\05_ColorBetweenStageOgl4\05_ColorBetweenStageOgl4.vcxproj", "{7EB3E3BE-981C-49D1-AA67-E87432AE42D8}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "06_TessellatedTriangleOgl4", "ogl4\06_TessellatedTriangleOgl4\06_TessellatedTriangleOgl4.vcxproj", "{4FBF35C8-089E-47CD-B76F-F43987416F47}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -115,6 +117,10 @@ Global
 		{7EB3E3BE-981C-49D1-AA67-E87432AE42D8}.Debug|Win32.Build.0 = Debug|Win32
 		{7EB3E3BE-981C-49D1-AA67-E87432AE42D8}.Release|Win32.ActiveCfg = Release|Win32
 		{7EB3E3BE-981C-49D1-AA67-E87432AE42D8}.Release|Win32.Build.0 = Release|Win32
+		{4FBF35C8-089E-47CD-B76F-F43987416F47}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4FBF35C8-089E-47CD-B76F-F43987416F47}.Debug|Win32.Build.0 = Debug|Win32
+		{4FBF35C8-089E-47CD-B76F-F43987416F47}.Release|Win32.ActiveCfg = Release|Win32
+		{4FBF35C8-089E-47CD-B76F-F43987416F47}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -137,5 +143,6 @@ Global
 		{2A8FB66E-6AC4-46EF-9FE9-D6E3CCAFB74A} = {06F14E49-D1F0-4EFD-90FE-30071A2D3952}
 		{356211E3-A9A5-4716-898F-878DD9832762} = {06F14E49-D1F0-4EFD-90FE-30071A2D3952}
 		{7EB3E3BE-981C-49D1-AA67-E87432AE42D8} = {06F14E49-D1F0-4EFD-90FE-30071A2D3952}
+		{4FBF35C8-089E-47CD-B76F-F43987416F47} = {06F14E49-D1F0-4EFD-90FE-30071A2D3952}
 	EndGlobalSection
 EndGlobal
